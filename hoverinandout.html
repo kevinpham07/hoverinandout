@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>HoverIn/Out</title>
+	<style>
+		img{
+			height: 200px;
+			width: 100px;
+		}
+	</style>
+	<script src='http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js'></script>
+	<script>
+		$(document).ready(function(){
+
+			$('img').hover(function(){
+				$(this).attr("src","launch2.png");
+			}, function(){
+				$(this).attr("src","launch1.png");				
+			});
+		});
+
+	</script>
+</head>
+<body>
+	<img src="launch1.png" alt="launch1">
+	<img src="launch1.png" alt="launch1">
+	<img src="launch1.png" alt="launch1">
+	<img src="launch1.png" alt="launch1">
+</body>
+</html>
